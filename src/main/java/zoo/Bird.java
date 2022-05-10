@@ -10,7 +10,7 @@ public class Bird extends Animal{
         this.nameOfBird = nameOfBird;
     }
 
-    public String getAction() {return action;};
+    public String getAction() {return action;}
 
-    public String getNameOfFish() {return nameOfBird;};
+    public String getNameOfBird() {return nameOfBird;}
 }

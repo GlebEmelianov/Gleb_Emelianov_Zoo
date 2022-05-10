@@ -17,9 +17,14 @@ public class Main {
 
         Scanner scanner = new Scanner(System.in);
 
-        Mammal Lion = new Mammal("Lion", "roars", "earth", "air");
-        Fish Carp = new Fish("Carp", "blows bubbles", "water", "water");
-        Bird Parrot = new Bird("Parrot", "talks", "air", "air");
+        Mammal lion = new Mammal("Lion", "roars", "earth", "air");
+        Lion lionSound = new Lion("Roars");
+
+        Fish carp = new Fish("Carp", "blows bubbles", "water", "water");
+        Carp carpSound = new Carp("Gugles");
+
+        Bird parrot = new Bird("Parrot", "talks", "air", "air");
+        Parrot parrotSound = new Parrot("Talks");
 
         while (true) {
 
@@ -47,13 +52,16 @@ public class Main {
             switch (pointOfMenu) {
 
                 case 1:
-                    ZooAnimals.typeOfMammal(Lion);
+                    ZooAnimals.typeOfMammal(lion);
+                    ZooAnimals.mammalSound(lionSound);
                     break;
                 case 2:
-                    ZooAnimals.typeOfFish(Carp);
+                    ZooAnimals.typeOfFish(carp);
+                    ZooAnimals.fishSound(carpSound);
                     break;
                 case 3:
-                    ZooAnimals.typeOfBird(Parrot);
+                    ZooAnimals.typeOfBird(parrot);
+                    ZooAnimals.parrotSound(parrotSound);
                     break;
             }
         }

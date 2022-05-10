@@ -10,7 +10,8 @@ public class Mammal extends Animal {
         this.nameOfMammal = nameOfMammal;
     }
 
-    public String getAction() {return action;};
+    public String getAction() {return action;}
 
-    public String getNameOfMammal() {return nameOfMammal;};
+    public String getNameOfMammal() {return nameOfMammal;}
+
 }

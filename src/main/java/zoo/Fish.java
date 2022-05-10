@@ -10,7 +10,7 @@ public class Fish extends Animal {
         this.nameOfFish = nameOfFish;
     }
 
-    public String getAction() {return action;};
+    public String getAction() {return action;}
 
-    public String getNameOfFish() {return nameOfFish;};
+    public String getNameOfFish() {return nameOfFish;}
 }
