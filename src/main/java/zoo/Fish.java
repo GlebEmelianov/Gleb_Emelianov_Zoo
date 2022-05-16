@@ -3,11 +3,13 @@
 package zoo;
 
 public class Fish extends Animal {
-    private String nameOfFish;
+    protected String nameOfFish;
+    private String action;
 
     public Fish(String nameOfFish, String action, String move, String breathe) {
         super(breathe, move, action);
         this.nameOfFish = nameOfFish;
+        this.action = action;
     }
 
     public String getAction() {return action;}

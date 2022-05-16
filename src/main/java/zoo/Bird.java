@@ -3,14 +3,16 @@
 package zoo;
 
 public class Bird extends Animal{
-    private String nameOfBird;
+    protected String nameOfBird;
+    private String action;
 
     public Bird(String nameOfBird, String action, String move, String breathe) {
         super(breathe, move, action);
         this.nameOfBird = nameOfBird;
+        this.action = action;
     }
 
-    public String getAction() {return action;}
+    protected String getAction() {return action;}
 
-    public String getNameOfBird() {return nameOfBird;}
+    protected String getNameOfBird() {return nameOfBird;}
 }

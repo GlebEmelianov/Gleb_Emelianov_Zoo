@@ -17,14 +17,14 @@ public class Main {
 
         Scanner scanner = new Scanner(System.in);
 
-        Mammal lion = new Mammal("Lion", "roars", "earth", "air");
-        Lion lionSound = new Lion("Roars");
+        Mammal lion = new Mammal("Lion", "runs", "earth", "air");
+        Lion lionSound = new Lion("Roars", "lion", "runs", "earth", "air");
 
-        Fish carp = new Fish("Carp", "blows bubbles", "water", "water");
-        Carp carpSound = new Carp("Gugles");
+        Fish carp = new Fish("Carp", "swims", "water", "water");
+        Carp carpSound = new Carp("Gugles", "carp", "swims", "water", "water");
 
-        Bird parrot = new Bird("Parrot", "talks", "air", "air");
-        Parrot parrotSound = new Parrot("Talks");
+        Bird parrot = new Bird("Parrot", "flies", "air", "air");
+        Parrot parrotSound = new Parrot("Talks", "air", "air", "flies", "parrot");
 
         while (true) {
 
@@ -61,7 +61,7 @@ public class Main {
                     break;
                 case 3:
                     ZooAnimals.typeOfBird(parrot);
-                    ZooAnimals.parrotSound(parrotSound);
+                    ZooAnimals.birdSound(parrotSound);
                     break;
             }
         }

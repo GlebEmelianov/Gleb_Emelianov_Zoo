@@ -10,7 +10,7 @@ public class ZooAnimals {
 
     private static String mammalSound = "";
     private static String fishSound = "";
-    private static String parrotSound = "";
+    private static String birdSound = "";
 
     public static void typeOfMammal(Mammal mammal) {
         mammalType += String.format("Mammal %s %s, walks on %s, breathes %s\n", mammal.getNameOfMammal(),
@@ -19,7 +19,7 @@ public class ZooAnimals {
     }
 
     public static void mammalSound(Lion lion) {
-//        mammalSound += String.format("Lion %s", lion.getSound());
+        mammalSound += String.format("Lion %s", lion.getSound());
         System.out.printf("Lion %s\n", lion.getSound());
     }
 
@@ -27,7 +27,6 @@ public class ZooAnimals {
         fishType += String.format("Fish %s %s, swims %s, breathes %s\n", fish.getNameOfFish(),
                 fish.getAction(), fish.getMove(), fish.getBreathe());
         System.out.printf("I am %s, I swim in %s and breathe %s\n", fish.getNameOfFish(), fish.getMove(), fish.getBreathe());
-
     }
 
     public static void fishSound(Carp carp) {
@@ -40,11 +39,10 @@ public class ZooAnimals {
                 bird.getAction(), bird.getMove(), bird.getBreathe());
         System.out.printf("I am %s , I fly in %s and breathe %s\n", bird.getNameOfBird(),
                 bird.getMove(), bird.getBreathe());
-
     }
 
-    public static void parrotSound(Parrot parrot) {
-        parrotSound += String.format("Parrot %s", parrot.getSound());
+    public static void birdSound(Parrot parrot) {
+        birdSound += String.format("Parrot %s", parrot.getSound());
         System.out.printf("Parrot %s\n", parrot.getSound());
     }
 

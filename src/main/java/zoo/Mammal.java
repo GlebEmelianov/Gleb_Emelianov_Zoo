@@ -3,11 +3,13 @@
 package zoo;
 
 public class Mammal extends Animal {
-    private String nameOfMammal;
+    protected String nameOfMammal;
+    private String action;
 
     public Mammal(String nameOfMammal, String action, String move, String breathe) {
         super(breathe, move, action);
         this.nameOfMammal = nameOfMammal;
+        this.action = action;
     }
 
     public String getAction() {return action;}
